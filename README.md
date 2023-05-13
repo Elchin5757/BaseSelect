@@ -38,4 +38,7 @@ yarn dev
 ```sh
 yarn build
 ```
-# baseselect
+
+# Base selectning ishlatilishi
+
+

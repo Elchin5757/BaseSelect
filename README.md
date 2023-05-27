@@ -41,8 +41,5 @@ yarn build
 ```
 
 # Base selectning ishlatilishi
-Bu Base Select headlessui yordamida yasalgan https://headlessui.com/
-```sh
-test
-```
+Bu Base Select headlessui yordamida yasalgan (headlessui)(https://headlessui.com/)
 

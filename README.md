@@ -43,3 +43,38 @@ yarn build
 # Base selectning ishlatilishi
 Bu Base Select headlessui yordamida yasalgan [headlessui](https://headlessui.com/)
 
+1. Bu componentni ishlatish uchun proektingizda [tailwindcss](https://tailwindcss.com/) va [headlessui](https://headlessui.com/) kutibhonalari bolishi kerak  
+2. src folder ichida components folderi bor uning ichida esa BaseSelect degan vue file bor shu Selectning kodlari uni olib oz componentlaringizga qo'shing
+3. Selectni sizga kerakli file ga import qiling 
+        `import BaseSelect from "@/components/BaseSelect.vue";`
+4. Selectning v-model directiviga o'z o'zgaruvchingizni bog'lang
+        `const selected = ref(null);`
+        `<BaseSelect v-model="selected" />`
+5. Selectda dropdownida chiqishi kerak bo'lgan (productlarni) ulang 
+        `const items = [
+          { name: "Item 1", value: 1 },
+          { name: "Item 2", value: 2 },
+          { name: "Item 3", value: 3 },
+        ];`  
+        `<BaseSelect v-model="selected" :items="items" />`
+6. Selctga placeholder, label va class qo'shishingiz mumkin 
+         `<BaseSelect
+             v-model="selected"
+             :items="items"
+             label="Select"
+             placeholder="Select" />`
+7. Selectga hatolikni korsatish uchun error-message directiveida foydalanging
+           `const errorMessage = computed(() => {
+              if (selected.value === null) {
+                return "Please select an item";
+              }
+              return null;
+            });`
+           `<BaseSelect
+               v-model="selected"
+               :items="items"
+               label="Select"
+               placeholder="Select"
+               :error-message="errorMessage"
+               class="w-1/2"
+            />`

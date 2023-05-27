@@ -1,3 +1,4 @@
+# O'zbekcha documentatsiya Pastroqda
 # baseselect
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -40,5 +41,5 @@ yarn build
 ```
 
 # Base selectning ishlatilishi
-
+Bu Base Select Flowbite yordamida yasalgan
 

@@ -51,12 +51,12 @@ Bu Base Select headlessui yordamida yasalgan [headlessui](https://headlessui.com
         `const selected = ref(null);`
         `<BaseSelect v-model="selected" />`
 5. Selectda dropdownida chiqishi kerak bo'lgan (productlarni) ulang 
-       1.`const items = [
+       ```sh const items = [
           { name: "Item 1", value: 1 },
           { name: "Item 2", value: 2 },
           { name: "Item 3", value: 3 },
-        ];`  
-       2.`<BaseSelect v-model="selected" :items="items" />`
+        ];``` 
+       ```c <BaseSelect v-model="selected" :items="items" />```
 6. Selctga placeholder, label va class qo'shishingiz mumkin 
         1. `<BaseSelect
              v-model="selected"

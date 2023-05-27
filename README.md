@@ -41,5 +41,8 @@ yarn build
 ```
 
 # Base selectning ishlatilishi
-Bu Base Select Flowbite yordamida yasalgan
+Bu Base Select headlessui yordamida yasalgan https://headlessui.com/
+```sh
+test
+```
 

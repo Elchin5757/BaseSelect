@@ -46,7 +46,7 @@ Bu Base Select headlessui yordamida yasalgan [headlessui](https://headlessui.com
 1. Bu componentni ishlatish uchun proektingizda [tailwindcss](https://tailwindcss.com/) va [headlessui](https://headlessui.com/) kutibhonalari bolishi kerak  
 2. src folder ichida components folderi bor uning ichida esa BaseSelect degan vue file bor shu Selectning kodlari uni olib oz componentlaringizga qo'shing
 3. Selectni sizga kerakli file ga import qiling 
-        `import BaseSelect from "@/components/BaseSelect.vue";`
+        ```import BaseSelect from "@/components/BaseSelect.vue";```
 4. Selectning v-model directiviga o'z o'zgaruvchingizni bog'lang
         `const selected = ref(null);`
         `<BaseSelect v-model="selected" />`
